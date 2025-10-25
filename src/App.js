@@ -71,67 +71,67 @@ const AppRoutes = () => {
       <Route path="/register" element={<Register />} />
       
       <Route path="/" element={
-        <ProtectedRoute>
+        // <ProtectedRoute>
           <AppLayout>
             <Dashboard />
           </AppLayout>
-        </ProtectedRoute>
+        // </ProtectedRoute>
       } />
       
       <Route path="/dashboard" element={
-        <ProtectedRoute>
+        // <ProtectedRoute>
           <AppLayout>
             <Dashboard />
           </AppLayout>
-        </ProtectedRoute>
+        // </ProtectedRoute>
       } />
       
       <Route path="/map" element={
-        <ProtectedRoute requiredClearance={2}>
+        // <ProtectedRoute requiredClearance={2}>
           <AppLayout>
             <MapView />
           </AppLayout>
-        </ProtectedRoute>
+        // </ProtectedRoute>
       } />
       
       <Route path="/satellite" element={
-        <ProtectedRoute requiredClearance={2}>
+        // <ProtectedRoute requiredClearance={2}>
           <AppLayout>
             <SatelliteData />
           </AppLayout>
-        </ProtectedRoute>
+        // </ProtectedRoute>
       } />
       
       <Route path="/alerts" element={
-        <ProtectedRoute requiredClearance={2}>
+        // <ProtectedRoute requiredClearance={2}>
           <AppLayout>
             <Alerts />
           </AppLayout>
-        </ProtectedRoute>
+        // </ProtectedRoute>
       } />
       
       <Route path="/zones" element={
-        <ProtectedRoute requiredClearance={2}>
+        // <ProtectedRoute requiredClearance={2}>
           <AppLayout>
             <StrategicZones />
           </AppLayout>
-        </ProtectedRoute>
+        // </ProtectedRoute>
       } />
       
       <Route path="/audit" element={
-        <ProtectedRoute requiredRole={['admin']}>
+        // <ProtectedRoute requiredRole={['admin']}>
           <AppLayout>
             <AuditLogs />
           </AppLayout>
-        </ProtectedRoute>
+        // </ProtectedRoute>
       } />
       
       <Route path="/settings" element={
-        <ProtectedRoute>
+        // <ProtectedRoute>
           <AppLayout>
             <Settings />
           </AppLayout>
-        </ProtectedRoute>
+        // </ProtectedRoute>
       } />
       
       <Route path="*" element={<Navigate to="/dashboard" replace />} />
